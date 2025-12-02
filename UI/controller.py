@@ -16,7 +16,6 @@ class Controller:
         * Numero di Tratte
         * Lista di Tratte che superano il costo indicato come soglia
         """
-        # TODO
         #controllo che l'input sia valido
         threshold = self._view.guadagno_medio_minimo.value
         if threshold.isalpha():

@@ -12,7 +12,6 @@ class Model:
         Costruisce il grafo (self.G) inserendo tutti gli Hub (i nodi) presenti e filtrando le Tratte con
         guadagno medio per spedizione >= threshold (euro)
         """
-        # TODO
         self.G.clear()
         hubs = DAO.get_all_hub()
         for hub in hubs:
@@ -32,7 +31,6 @@ class Model:
         Restituisce il numero di Tratte (edges) del grafo
         :return: numero di edges del grafo
         """
-        # TODO
         return self.G.number_of_edges()
 
     def get_num_nodes(self):
@@ -40,7 +38,6 @@ class Model:
         Restituisce il numero di Hub (nodi) del grafo
         :return: numero di nodi del grafo
         """
-        # TODO
         return self.G.number_of_nodes() #funzione che restituisce numero dei nodi
 
     def get_all_edges(self):
@@ -48,7 +45,6 @@ class Model:
         Restituisce tutte le Tratte (gli edges) con i corrispondenti pesi
         :return: gli edges del grafo con gli attributi (il weight)
         """
-        # TODO
         #resituisce una lista di tuple: (hub1,hub2,peso)
         edges = []
         for u,v,data in self.G.edges(data=True): #data = True almeno mi resituisce anche il peso dell'edge
